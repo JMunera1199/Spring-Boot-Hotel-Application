@@ -34,7 +34,7 @@ public class HotelRegistrationController {
 		uriVariables.put("to",to);
 		
 		ResponseEntity<HotelRegistration> responseEntity = new RestTemplate().getForEntity
-		("http://localhost:8000/hotel-x/from/{from}/to/{to}", 
+		("http://localhost:8000/hotel-exchange/from/{from}/to/{to}", 
 				HotelRegistration.class, uriVariables);
 		
 		HotelRegistration hotelRegistration = responseEntity.getBody();

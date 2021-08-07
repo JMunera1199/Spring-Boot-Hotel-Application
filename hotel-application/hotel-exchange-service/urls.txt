@@ -4,6 +4,6 @@ Hotel X Service
 Hotel Registration Service
 - http://localhost:8100/hotel-registration-feign/from/USD/to/INR/quantity/10
 
-http://35.223.40.231:8000/actuator/health/
-http://35.223.40.231:8000/actuator/health/liveness
-http://35.223.40.231:8000/actuator/health/readiness
+http://localhost:8000/actuator/health/
+http://localhost:8000/actuator/health/liveness
+http://localhost:8000/actuator/health/readiness
