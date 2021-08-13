@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  mongo-container:
+    #network_mode: host
+    image: mongo
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=abcdfg
+        - MONGO_INITDB_ROOT_PASSWORD=hijklm
+    ports:
+      - "27017:27017"
+      
+      
+      mongodb+localhost:8080
