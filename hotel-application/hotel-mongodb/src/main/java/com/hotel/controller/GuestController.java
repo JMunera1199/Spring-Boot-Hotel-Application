@@ -34,7 +34,7 @@ public class GuestController {
 		return guestService.getGuestbyId(id);
 	}
 	
-	@GetMapping("/all")
+	@GetMapping("/guests")
 	public List<Guest> getAllGuests() {
 		return guestService.getAllGuests();
 	}
