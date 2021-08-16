@@ -10,7 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hotel-registration-service</artifactId>
+	<artifactId>hotel-mongoDB</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hotelMongoDB</name>
 	<description>hotelMongoDB</description>

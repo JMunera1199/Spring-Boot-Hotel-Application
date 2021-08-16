@@ -7,16 +7,32 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.0</version>
-		<relativePath/>
 	</parent>
 
 	<groupId>com.hotel</groupId>
 	<artifactId>react-and-spring-data-rest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
 	<name>React.js and Spring Data REST - Root</name>
 	<description>An SPA with ReactJS in the frontend and Spring Data REST in the backend</description>
+	
+	<properties>
+		<java.version>16</java.version>
+		<spring-cloud.version>2020.0.2</spring-cloud.version>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -60,12 +76,21 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+	
 	<modules>
-		<module>basic</module>
-		<module>hypermedia</module>
-		<module>conditional</module>
-		<module>events</module>
-		<module>security</module>
+		<module>api-gateway</module>
+		<module>hotel-exchange-service</module>
+		<module>hotel-mongodb</module>
+		<module>hotel-registration-service</module>
+		<module>naming-server</module>
 	</modules>
 
 </project>
